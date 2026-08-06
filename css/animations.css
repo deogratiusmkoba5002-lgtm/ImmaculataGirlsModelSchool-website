@@ -1,0 +1,112 @@
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowMove{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(8px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes curtainCloseLeft {
+  from{
+    left: -50%;
+  }
+  to{
+    left: 0%;
+  }
+}
+
+@keyframes curtainCloseRight {
+  from{
+    right: -50%;
+  }
+  to{
+    right: 0%;
+  }
+}
+
+@keyframes curtainOpenLeft {
+  from{
+    left: 0;
+  }
+  to{
+    left: -50%;
+  }
+}
+
+@keyframes curtainOpenRight {
+  from{
+    right: 0%;
+  }
+  to{
+    right: -50%;
+  }
+}
+
+@keyframes kenBurns{
+  from{ transform: scale(1); }
+  to{ transform: scale(1.08); }
+}
+
+@keyframes pausePop{
+  0%{ transform: translate(-50%, -50%) scale(.6); opacity:0; }
+  60%{ transform: translate(-50%, -50%) scale(1.15); opacity:1; }
+  100%{ transform: translate(-50%, -50%) scale(1); opacity:1; }
+}
+
+.reveal{
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all .8s ease;
+}
+
+.reveal.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.greeting{
+  animation: fadeUp .8s ease forwards;
+}
+
+.hero-title{
+  animation:fadeUp .8s ease forwards;
+  animation-delay: .4s;
+  opacity: 0;
+}
+
+.hero-subtitle{
+  animation: fadeUp .8s ease forwards;
+  animation-delay:.8s;
+  opacity:0;
+}
+
+.welcome-btn{
+  animation: fadeUp .8s ease forwards;
+  animation-delay:1.2s;
+  opacity:0;
+}
+
+.arrow{
+  display: inline-block;
+  margin-left: 8px;
+  animation: arrowMove 1.5s ease-in-out infinite;
+}
+
+.welcome-btn:hover .arrow{
+  animation-play-state: paused;
+}

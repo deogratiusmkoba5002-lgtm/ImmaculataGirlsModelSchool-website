@@ -1,0 +1,51 @@
+@media (max-width: 768px){
+  .hero-title{
+    font-size: 2.4rem;
+  }
+  .principal{
+    flex-direction: column;
+  }
+  .identity{
+    grid-template-columns: 1fr;
+  }
+  .cinematic-gallery{
+    height: 420px;
+    border-radius: 12px;
+  }
+
+  .gallery-nav{
+    display: none;
+  }
+  .gallery-thumb{
+    width: 46px;
+    height: 46px;
+  }
+  .gallery-caption{
+    font-size: .85rem;
+    left: 16px;
+    bottom: 70px;
+  }
+  .student-life-container,
+  .admissions-container,
+  .contact-container,
+  .principal,
+  .site-hero{
+    flex-direction: column;
+  }
+  .academics-grid,
+  .facilities-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px){
+  .gallery-thumbnails{
+    gap: 40px;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+  .hero-title{
+    font-size: 1.9rem;
+  }
+}
